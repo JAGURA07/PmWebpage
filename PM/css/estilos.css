@@ -270,6 +270,12 @@ a.nav__links::before {
     background-image: url("../images/barras.jpg");
 }
 
+.contenedor.img3
+{
+    height: 100vh;
+    background-image: url("../images/mision.jpg");
+}
+
 /* Knowledge */
 
 .knowledge {
