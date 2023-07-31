@@ -311,8 +311,9 @@ a.nav__links::before {
 }
 
 .knowledge__paragraph{
-    line-height: 1.7;
+    line-height: 2;
     font-weight: 400;
+    font-size: 1.5rem
 }
 
 .knowledege__texts{
@@ -691,7 +692,7 @@ img.oficionas.centrales {
 
 .Lparagraph{
     font-weight: 300;
-    font-size: .85rem;
+    font-size: 1rem;
     color: #000;
     text-align: justify;
     padding-top: 2rem;
@@ -810,6 +811,28 @@ img.oficionas.centrales {
     color: #fff;
     font-size: 1rem;
     font-weight: 300;
+}
+
+/* Galeria */
+
+.gallery-container
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 150px;
+    padding: 30px;
+    grid-gap:30px;
+}
+
+.gallery__img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery__item:nth-child(4){
+    grid-column-start: span 2;
 }
 
 /* Adornos */
