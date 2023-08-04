@@ -21,3 +21,10 @@ carousel.addEventListener('mouseover', () => {
 carousel.addEventListener('mouseout', () => {
   carousel.style.animationPlayState = 'running';
 });
+
+desp = document.querySelectorAll('li.nav__items:has(ul.submenu)')
+desp.forEach(element => {
+  element.addEventListener('click',()=>{
+    element.classList.toggle('action')
+  })
+});

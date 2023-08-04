@@ -19,7 +19,7 @@ html::-webkit-scrollbar-track {
 }
 
 body {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     overflow-x: hidden  ;
 }
@@ -44,7 +44,6 @@ body {
 .container {
     width: 100%;
     margin: 0 auto;
-    overflow: hidden;
     padding: var(--padding-container);
     background-color: #dfdfdf;
 }
@@ -69,6 +68,7 @@ body {
     position: relative;
     display: grid;
     grid-template-rows: min-content 1fr;
+    z-index: 3;
 }
 
 /* Nav */
@@ -80,15 +80,14 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
-    color: #000;
-
+    color: #000;    
 }
 
 .nav__title {
     font-weight: 300;
 }
 
-.nav__link {
+.nav__link{
     margin-left: 6rem;
     margin-right: 16rem;
     width: 70%;
@@ -98,9 +97,12 @@ body {
     grid-auto-flow: column;
     grid-auto-columns: max-content;
     gap: 2em;
+    height: 100%;
 }
 
 a.nav__links::before {
+    rotate: 0deg;
+    transition: all 1s ease-in-out;
     content: '';
     display: block;
     height: 2rem;
@@ -109,8 +111,17 @@ a.nav__links::before {
     background-size: cover;
 }
 
+.action a.nav__links::before {
+    rotate: 90deg;
+}
+
 .nav__items {
-   list-style: none;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
 .nav__links {
@@ -119,6 +130,12 @@ a.nav__links::before {
     font-size: 1.5rem;
     align-items: center;
     display: flex;
+}
+
+a.nav__links:hover
+{
+    cursor: pointer;
+
 }
 
 .nav__menu {
@@ -178,6 +195,33 @@ a.nav__links::before {
   transform: translateY(-7px);
 }
 
+.submenu
+{
+    opacity: 0;
+    font-family: 'Inter';
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.6);
+    max-height: 0px;
+    transition: all 1s ease-in-out;
+    overflow: hidden;
+    box-sizing: border-box; 
+}
+
+.action .submenu
+{
+    max-height: 1000px ;
+    opacity: 1;
+}
+
+
 /* Hero container */
 
 .hero__container {
@@ -215,7 +259,7 @@ a.nav__links::before {
     color: #fff;
     text-decoration: none;
     padding: 13px 30px;
-    border: 3px #fff;
+    border: 3px solid #fff;
 }
 
 /* About */
@@ -250,7 +294,7 @@ a.nav__links::before {
     z-index: 2;
     color: #fff;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 0;
     width: 100%;
     letter-spacing: 2px;
@@ -350,7 +394,7 @@ section.testimony {
     grid-template-rows: max-content max-content;
     gap: 3em;
     justify-items:center ;
-}
+}   
 
 .testimony__body--show
 {
@@ -369,7 +413,7 @@ section.testimony {
 .testimony__img{
     width: 100%;
     height: 100%;
-    
+    object-fit: cover;
 }
 
 .testimony__arrow{
@@ -834,17 +878,56 @@ img.oficionas.centrales {
 
 /* Galeria */
 
+.gallery__tittle
+{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.gallery__paragraph
+{
+    font-family: Inter;
+    color: #F4F6F9;
+    font-size: 2.5rem;
+    margin-bottom: 20px;   
+}
+
 .gallery-container
 {
+    position: relative;
     background-repeat: no-repeat;
     background-position: center;
     justify-content: center;
     align-items: center;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-auto-rows: 150px;
     padding: 30px;
     grid-gap:30px;
+    height: 80vh;
+}
+
+.gallery-sub
+{
+    gap:30px;
+    max-width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 80%;
+}
+
+.gallery-sub:nth-of-type(2)
+{
+    grid-template-rows: 1fr 1fr;
+}
+
+.gallery-sub:nth-of-type(3)
+{
+    grid-template-rows: 3fr 1fr;
+}
+
+.gallery-sub:nth-of-type(4)
+{
+    grid-template-rows: 1fr 3fr;
 }
 
 .gallery__img
@@ -852,6 +935,7 @@ img.oficionas.centrales {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
 }
 
 .gallery__item:nth-child(4){
@@ -1147,6 +1231,11 @@ img.oficionas.centrales {
         flex: 1;
     }
 
+    .btn-flotante
+    {
+        top: 15%;
+        font-size: 1rem;
+    }
 }
 
 
