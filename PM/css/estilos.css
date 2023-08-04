@@ -330,11 +330,27 @@ a.nav__links:hover
     overflow: hidden;
 }
 
+.degradado
+{
+    background: linear-gradient(
+        to right,
+        #fff,
+        rgba(255,255,255,0.1)
+        );
+    width: 100%;
+    height: 25rem;
+}
+
 .knowledge__container{
     display: grid;
     grid-template-columns: 1fr;
     gap: 1em;
-    background-image: url(../images/degradado1.jpg);
+/*    background-image: url(../images/degradadoG.jpg);*/
+background: linear-gradient(
+        to top,
+        #0C2340,
+        #003087
+        );
     background-repeat: no-repeat;
     background-size: cover;
     height: 45vw;
@@ -501,8 +517,8 @@ section.testimony {
     background-color: #e5e5f7;
     text-align: center;
     border-radius: 10px;
-    width: 330px;
-    height: 370px;
+    width: 320px;
+    height: 320px;
     padding: 0;
     transition: all 1s ease-in;
     clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0 100%, 0 0);
@@ -821,7 +837,12 @@ img.oficionas.centrales {
     height: fit-content;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    background-image: url("../images/degradado1.jpg");
+    /*background-image: url("../images/degradadoG.jpg ");*/
+    background: linear-gradient(
+        to top,
+        #0C2340,
+        #003087
+        );
     color: #fff;
     padding: 0;
 }
@@ -1047,7 +1068,12 @@ img.oficionas.centrales {
 
 
     .knowledge__container{
-        background-image: url("../images/degradado1.jpg");
+        /*background-image: url("../images/degradado1.jpg");*/
+        background: linear-gradient(
+            to top,
+            #0C2340,
+            #003087
+            );
         grid-template-columns: 1fr;
         grid-template-rows: max-content 1fr;
         gap: 3em;

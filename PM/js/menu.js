@@ -12,16 +12,6 @@
     });
 })();
 
-const carousel = document.querySelector('.carousel');
-
-carousel.addEventListener('mouseover', () => {
-  carousel.style.animationPlayState = 'paused';
-});
-
-carousel.addEventListener('mouseout', () => {
-  carousel.style.animationPlayState = 'running';
-});
-
 desp = document.querySelectorAll('li.nav__items:has(ul.submenu)')
 desp.forEach(element => {
   element.addEventListener('click',()=>{

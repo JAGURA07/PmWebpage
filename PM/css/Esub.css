@@ -57,12 +57,14 @@ body {
 
 .form-content
 {
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    gap: 2rem;
     background: linear-gradient(
-        50deg,
-        rgba(40,42,55,1) 50%,
-        rgba(40,42,55,0.7)
-        ),
-        url(../images/degradadoG.jpg);
+        to top,
+        #0C2340,
+        #003087
+        );
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -71,3 +73,27 @@ body {
     border-radius: 25px;
 }
 
+:focus
+{
+    outline: 1px solid #dfdfdf;
+}
+
+.btn
+{
+    background-color: #CF142B;
+    transition: all 1000ms ease 0ms;
+    width: 150px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: darkred; 
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-7px);
+}
+
+.textoA
+{
+    background-color: #003087;
+}
