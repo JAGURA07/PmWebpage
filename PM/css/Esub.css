@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --padding-container: 100px 0;
+    --color-title: #001A49;
+}
+
+html::-webkit-scrollbar {
+    width: 12px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: rgb(204, 204, 204);
+    border-radius: 3px;
+}
+
+html::-webkit-scrollbar-track {
+    border-radius: 3px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden  ;
+    background-color: #dfdfdf;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.tittle{
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+.subtittle{
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.paragraph{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #000;
+    padding-top: 2rem;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: var(--padding-container);
+    background-color: #dfdfdf;
+}
+
+.form-content
+{
+    background: linear-gradient(
+        50deg,
+        rgba(40,42,55,1) 50%,
+        rgba(40,42,55,0.7)
+        ),
+        url(../images/degradadoG.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    width: 1000px;
+    border-radius: 25px;
+}
+
