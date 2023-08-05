@@ -25,21 +25,23 @@ body {
 }
 
 .tittle{
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 4rem;
 }
 
 .subtittle{
+    font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 3rem;
 }
 
 .paragraph{
-    font-weight: 400;
+    font-weight: 400, sans-serif;
     font-size: 1.5rem;
     color: #000;
     padding-top: 2rem;
-}
+}   
 
 .container {
     width: 100%;
@@ -305,6 +307,7 @@ a.nav__links:hover
 
 .contenedor.img1
 {
+    height: 45vh;
     background-image: url("../images/tubos.jpg");
 }
 
@@ -320,9 +323,9 @@ a.nav__links:hover
     background-image: url("../images/mision.jpg");
 }
 
-/* Knowledge */
+/* Productos */
 
-.knowledge {
+.productos{
     background-color: #e5e5f7;
     background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
     background-size: 20px 20px;
@@ -330,18 +333,7 @@ a.nav__links:hover
     overflow: hidden;
 }
 
-.degradado
-{
-    background: linear-gradient(
-        to right,
-        #fff,
-        rgba(255,255,255,0.1)
-        );
-    width: 100%;
-    height: 25rem;
-}
-
-.knowledge__container{
+.productosContainer{
     display: grid;
     grid-template-columns: 1fr;
     gap: 1em;
@@ -358,36 +350,126 @@ background: linear-gradient(
     align-items: start;
 }
 
-.knowledge__subcointainer{
-    width: 71%;
+.productosSubcontainer{
+
+    background: linear-gradient(
+        to right,
+        #fff,
+        rgba(255,255,255,0.1)
+        );
+    width: 100%;
+    height: 25rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
 }
 
-.knowledge__picture{
-    max-width: 500px;
-}
-
-.knowledge__paragraph{
-    line-height: 2;
-    font-weight: 400;
-    font-size: 1.5rem
-}
-
-.knowledege__texts{
-    color: #fff;
+.productosElement{
+    position: relative;
+    background-color: #e5e5f7;
     text-align: center;
-    text-decoration: none;
+    border-radius: 10px;
+    width: 320px;
+    height: 320px;
+    padding: 0;
+    transition: all 1s ease-in;
+    clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0 100%, 0 0);
 }
 
-.knowledge__img{
+.productosImg{
     position: relative;
     width: 100%;
     display: block;
     object-fit: cover;
     height: 100%;
+}
+
+.productosElement::after
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content:"";
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    background-color: #CF142B;
+    opacity: 0;
+    transition: all 1s ease-in;
+    clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0 100%, 0 0);
+}
+
+.productosElement:hover::after
+{
+    opacity: 1;
+    clip-path: polygon(84% 0, 100% 16%, 100% 100%, 0 100%, 0 0);
+}
+
+.productosElement:hover
+{
+    opacity: 1;
+    clip-path: polygon(84% 0, 100% 16%, 100% 100%, 0 100%, 0 0);
+}
+
+.productosElement:hover .text-hover
+{
+
+    opacity: 1;
+}
+
+.text-hover 
+{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #FFF;
+    opacity: 0;
+    z-index: 4;
+    transition: 1s;
+}
+
+
+.productosText{
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.productosTittle
+{
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+.productosSubtittle
+{
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.productosParagraph
+{
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.degradado
+{
+    background: linear-gradient(
+        to right,
+        #fff,
+        rgba(255,255,255,0.1)
+        );
+    width: 100%;
+    height: 25rem;
 }
 
 /* testymony */
@@ -561,23 +643,6 @@ section.testimony {
     clip-path: polygon(84% 0, 100% 16%, 100% 100%, 0 100%, 0 0);
 }
 
-.text-hover 
-{
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    color: #FFF;
-    opacity: 0;
-    z-index: 4;
-    transition: 1s;
-}
-
 .price__element:hover .text-hover
 {
 
@@ -631,7 +696,7 @@ section.testimony {
     grid-template-columns: 1fr;
     gap: 1em;
     grid-template-rows: min-content min-content min-content;
-    height: 47vw;
+    height: 55vw;
     justify-items: center;
     align-items: start;
     padding-top: 4rem;
@@ -1008,7 +1073,7 @@ img.oficionas.centrales {
 .lineaC
 {
     position: absolute;
-    top: 6rem;
+    top: 11.5rem;
     background-color: #CF142B;
     height: 5px;
     width: 100%;
@@ -1017,12 +1082,13 @@ img.oficionas.centrales {
 
 /* Media queries */
 
-@media (max-width:800px){
+@media (max-width:1024px){
     .nav__menu{
         display: block;
     }
 
     .nav__link--menu{
+        font-size: 1rem;
         position: fixed;
         background-color: rgb(255,255,255,0.6);
         top: 0;
@@ -1037,6 +1103,12 @@ img.oficionas.centrales {
         opacity: 0;
         pointer-events: none;
         transition: .7s opacity;
+    }
+
+    .btn-flotante
+    {
+        top: 15%;
+        font-size: 1rem;
     }
 
     .nav__link--show{
@@ -1138,329 +1210,4 @@ img.oficionas.centrales {
         flex: 1;
     }
 
-}
-
-
-@media (max-width:1200px){
-    .nav__menu{
-        display: block;
-    }
-
-    .nav__link--menu{
-        position: fixed;
-        background-color: rgb(255,255,255,0.6);
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        z-index: 100;
-        opacity: 0;
-        pointer-events: none;
-        transition: .7s opacity;
-    }
-
-    .nav__link--show{
-        --show: block;
-        opacity:1 ;
-        pointer-events: unset;
-    }
-
-    .nav__close{
-        position: absolute;
-        top: 30px;
-        right: 30px;
-        width: 30px;
-        cursor: pointer;
-    }
-
-    .hero__title{
-        font-size: 2.5rem;
-    }
-
-
-    .about__main{
-        gap: 2em;
-    }
-
-    .about__icons:last-of-type{
-        grid-column: 1/-1;
-    }
-
-
-    .knowledge__container{
-        background-image: url("../images/degradado1.jpg");
-        grid-template-columns: 1fr;
-        grid-template-rows: max-content 1fr;
-        gap: 3em;
-        text-align: center;
-    }
-
-    .knowledge__picture{
-        grid-row: 1/2;
-        justify-self: center;
-    }
-
-    .testimony__container{
-        grid-template-columns: 30px 1fr 30px;
-    }
-
-    .testimony__body{
-        grid-template-columns: 1fr;
-        grid-template-rows: max-content max-content;
-        gap: 3em;
-        justify-items:center ;
-    }
-
-    .testimony__picture
-    {
-        width: 100vw;
-        height: 95vh;
-        position: relative;
-    }
-
-
-    .testimony__img{
-        width: 100%;
-        height: 100%;
-        
-    }
-
-    .questions__copy{
-        width: 100%;
-    }
-
-    .footer__container{
-        flex-wrap: wrap;
-    }
-
-    .nav--footer{
-        width: 100%;
-        justify-items: center;
-    }
-
-    .nav__link--footer{
-        width: 100%;
-        justify-content: space-evenly;
-        margin: 0;
-    }
-
-    .footer__form{
-        width: 100%;
-        justify-content: space-evenly;
-    }
-
-    .footer__input{
-        flex: 1;
-    }
-
-    .btn-flotante
-    {
-        top: 15%;
-        font-size: 1rem;
-    }
-}
-
-
-@media (max-width:800px){
-    .nav__menu{
-        display: block;
-    }
-
-    .nav__link--menu{
-        position: fixed;
-        background-color: rgb(255,255,255,0.6);
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        z-index: 100;
-        opacity: 0;
-        pointer-events: none;
-        transition: .7s opacity;
-    }
-
-    .nav__link--show{
-        --show: block;
-        opacity:1 ;
-        pointer-events: unset;
-    }
-
-    .nav__close{
-        position: absolute;
-        top: 30px;
-        right: 30px;
-        width: 30px;
-        cursor: pointer;
-    }
-
-    .hero__title{
-        font-size: 2.5rem;
-    }
-
-
-    .about__main{
-        gap: 2em;
-    }
-
-    .about__icons:last-of-type{
-        grid-column: 1/-1;
-    }
-
-
-    .knowledge__container{
-        background-image: url("../images/degradado1.jpg");
-        grid-template-columns: 1fr;
-        grid-template-rows: max-content 1fr;
-        gap: 3em;
-        text-align: center;
-    }
-
-    .knowledge__picture{
-        grid-row: 1/2;
-        justify-self: center;
-    }
-
-    .testimony__container{
-        grid-template-columns: 30px 1fr 30px;
-    }
-
-    .testimony__body{
-        grid-template-columns: 1fr;
-        grid-template-rows: max-content max-content;
-        gap: 3em;
-        justify-items:center ;
-    }
-
-    .testimony__picture
-    {
-        width: 100vw;
-        height: 95vh;
-        position: relative;
-    }
-
-
-    .testimony__img{
-        width: 100%;
-        height: 100%;
-        
-    }
-
-    .questions__copy{
-        width: 100%;
-    }
-
-    .footer__container{
-        flex-wrap: wrap;
-    }
-
-    .nav--footer{
-        width: 100%;
-        justify-items: center;
-    }
-
-    .nav__link--footer{
-        width: 100%;
-        justify-content: space-evenly;
-        margin: 0;
-    }
-
-    .footer__form{
-        width: 100%;
-        justify-content: space-evenly;
-    }
-
-    .footer__input{
-        flex: 1;
-    }
-
-}
-
-@media (max-width:600px){
-    .hero__title{
-        font-size: 2rem;
-    }
-
-    .hero__paragraph{
-        font-size: 1rem;
-    }
-
-    .subtitle{
-        font-size: 1.8rem;
-    }
-
-    .price__element{
-        width: 90%;
-    }
-
-    .price__element--best{
-        width: 90%;
-        /* padding: 40px; */
-    }
-
-    .price__price{
-        font-size: 2rem;
-    }
-
-    .testimony{
-        --padding-container: 60px 0;
-    }
-
-    .testimony__container{
-        grid-template-columns: 28px 1fr 28px;
-        gap: .9em;
-    }
-
-    .testimony__arrow{
-        width: 100%;
-    }
-
-    .testimony__course{
-        margin-top: 15px;
-    }
-
-    .questions__title{
-        font-size: 1rem;
-    }
-
-    .footer__title{
-        justify-self: start;
-        margin-bottom: 15px;
-    }
-
-    .nav--footer{
-        padding-bottom: 60px;
-    }
-
-    .nav__link--footer{
-        justify-content: space-between;
-    }
-
-    .footer__inputs{
-        flex-wrap: wrap;
-    }
-
-    .footer__input{
-        flex-basis: 100%;
-        margin: 0;
-        margin-bottom: 16px;
-    }
-
-    .footer__submit{
-        margin-right: auto;
-        margin-left: 0;
-        
-
-        /* 
-        margin:0;
-        width: 100%;
-        */
-    }
 }

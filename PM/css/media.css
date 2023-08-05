@@ -1,0 +1,56 @@
+.knowledge{
+    background-color: #e5e5f7;
+    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    overflow: hidden;
+}
+
+.knowledge__container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+/*    background-image: url(../images/degradadoG.jpg);*/
+background: linear-gradient(
+        to top,
+        #0C2340,
+        #003087
+        );
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45vw;
+    justify-items: center;
+    align-items: start;
+}
+
+.knowledge__subcointainer{
+    width: 71%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.knowledge__picture{
+    max-width: 500px;
+}
+
+.knowledge__paragraph{
+    line-height: 2;
+    font-weight: 400;
+    font-size: 1.5rem
+}
+
+.knowledege__texts{
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.knowledge__img{
+    position: relative;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    height: 100%;
+}
