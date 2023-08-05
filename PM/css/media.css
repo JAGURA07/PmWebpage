@@ -1,3 +1,116 @@
+.banner-image{
+    object-fit: cover;
+    object-position: center;
+    width: 100vw;
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    top: 0px;
+}
+
+.nav__link--show{
+    --show: block;
+    opacity:1 ;
+    pointer-events: unset;
+}
+
+.nav__close{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hero__title{
+    font-size: 2.5rem;
+}
+
+
+.about__main{
+    gap: 2em;
+}
+
+.about__icons:last-of-type{
+    grid-column: 1/-1;
+}
+
+
+.knowledge__container{
+    /*background-image: url("../images/degradado1.jpg");*/
+    background: linear-gradient(
+        to top,
+        #0C2340,
+        #003087
+        );
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content 1fr;
+    gap: 3em;
+    text-align: center;
+}
+
+.knowledge__picture{
+    grid-row: 1/2;
+    justify-self: center;
+}
+
+.testimony__container{
+    grid-template-columns: 30px 1fr 30px;
+}
+
+.testimony__body{
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content;
+    gap: 3em;
+    justify-items:center ;
+}
+
+.testimony__picture
+{
+    width: 100vw;
+    height: 95vh;
+    position: relative;
+}
+
+
+.testimony__img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.questions__copy{
+    width: 100%;
+}
+
+.footer__container{
+    flex-wrap: wrap;
+}
+
+.nav--footer{
+    width: 100%;
+    justify-items: center;
+}
+
+.nav__link--footer{
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+.footer__form{
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.footer__input{
+    flex: 1;
+}
+
+
+
+/*  KNOLEDGE */
+
 .knowledge{
     background-color: #e5e5f7;
     background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
@@ -54,3 +167,168 @@ background: linear-gradient(
     object-fit: cover;
     height: 100%;
 }
+
+/* PRECIO */
+
+.price__element::after
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content:"";
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    background-color: #CF142B;
+    opacity: 0;
+    transition: all 1s ease-in;
+    clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0 100%, 0 0);
+}
+
+.price__element:hover::after
+{
+    opacity: 1;
+    clip-path: polygon(84% 0, 100% 16%, 100% 100%, 0 100%, 0 0);
+}
+
+.price__element:hover
+{
+    opacity: 1;
+    clip-path: polygon(84% 0, 100% 16%, 100% 100%, 0 100%, 0 0);
+}
+
+.price__element:hover .text-hover
+{
+
+    opacity: 1;
+}
+
+.price__name{
+    color: var(--color-plan);
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.price__price{
+    font-size: 2.5rem;
+    color: var(--color-price);
+}
+
+.price__items{
+    margin-top: 35px;
+    display: grid;
+    gap: 1em;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    color: var(--color-items);
+}
+
+.price__cta{
+    display: block;
+    padding: 20px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: var(--bg-cta);
+    font-weight: 600;
+    color: var(--color-cta);
+    box-shadow: 0 0 1px rgba(0, 0, 0, .5);
+}
+
+/* NOSOTROS */
+
+.nosotros__container{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    grid-template-rows: min-content min-content min-content;
+    height: 55vw;
+    justify-items: center;
+    align-items: start;
+    padding-top: 4rem;
+}
+
+.nosotros__subcointainer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0 5rem;
+    justify-items: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.nosotros__subcointainer.tresContainer
+{
+    padding-top: inherit;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.nosotros__tittle{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #101084;
+    padding: 0 5rem;
+    justify-self: start;
+    text-decoration: none;
+}
+
+.nosotros__subtittle
+{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nostros_paragraph{
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #000;
+    padding-top: 2rem;
+}
+
+/* price */
+
+.price{
+    text-align: center;
+}
+
+.price__table{
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.price__element{
+    position: relative;
+    background-color: #e5e5f7;
+    text-align: center;
+    border-radius: 10px;
+    width: 320px;
+    height: 320px;
+    padding: 0;
+    transition: all 1s ease-in;
+    clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0 100%, 0 0);
+}
+
+/*.price__element--best{
+    width: 370px;
+    background-color: none;
+    --color-plan: rgb(255 255 255 / 75%);
+    --color-price: #fff;
+    --bg-cta: rgb(255,255,255,0);
+    --color-cta: #FFF;
+    --color-items: #fff;
+}*/
+
