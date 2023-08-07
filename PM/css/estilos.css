@@ -46,7 +46,6 @@ body {
 .container {
     width: 100%;
     margin: 0 auto;
-    padding: var(--padding-container);
     background-color: #dfdfdf;
 }
 
@@ -444,10 +443,10 @@ background: linear-gradient(
     grid-template-columns: 1fr;
     gap: 1em;
     grid-template-rows: min-content min-content min-content;
-    height: 55vw;
+    height: 100vh;
     justify-items: center;
     align-items: start;
-    padding-top: 4rem;
+    padding-top: 2rem;
 }
 
 .nosotrosSubcontainer{
@@ -462,17 +461,17 @@ background: linear-gradient(
 
 .nosotrosSubcontainer.tres
 {
-    padding-top: inherit;
+    padding-top: 2rem;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
 
 .nosotrosElement{
     position: relative;
     background-color: transparent;
     text-align: center;
     border-radius: 10px;
-    height: 370px;
-    padding: 0;
+    height: 250px;
 }
 
 img.oficionas.centrales {
@@ -512,9 +511,15 @@ img.oficionas.centrales {
 
 .acercaCertificado.cinco::before
 {
+    font-size: 2rem;
     background-image: url(../images/Certificate.svg);
 }
 
+.acercaList
+{
+    list-style-type: none;
+
+}
 
 .Lparagraph{
     font-weight: 300;
@@ -789,7 +794,7 @@ img.oficionas.centrales {
 .lineaD
 {
     position: absolute;
-    top: 8rem;
+    top: 6rem;
     background-color: #CF142B;
     height: 5px;
     width: 5rem;
@@ -799,7 +804,7 @@ img.oficionas.centrales {
 .lineaI
 {
     position: absolute;
-    top: 8rem;
+    top: 6rem;
     background-color: #CF142B;
     height: 5px;
     width: 5rem;
@@ -1080,7 +1085,7 @@ section.testimony {
 
 /* Media queries */
 
-@media (min-width:768px) and (max-width:1024px)
+@media (min-width:1024px) and (max-width:1800px)
 {
 
     .nav {
@@ -1115,6 +1120,7 @@ section.testimony {
 
     .btn-flotante
     {
+        width: 10rem;
         top: 16%;
         font-size: 1rem;
     }
@@ -1139,7 +1145,7 @@ section.testimony {
 
     .hero__paragraph {
         margin-bottom: 5px;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .cta {
@@ -1154,7 +1160,7 @@ section.testimony {
 
     .productosContainer
     {
-        height: 55vw;
+        height: 55vh;
         justify-items: center;
         padding: 0;
     }
@@ -1193,7 +1199,7 @@ section.testimony {
 
     .nosotrosContainer 
     {
-        height: 100vh;
+        height: 70vh;
         padding-top: 2rem;
     }
 
@@ -1232,6 +1238,11 @@ section.testimony {
         padding-top: 1rem;
     }
 
+    .nosotrosSubcontainer
+    {
+        padding: 0 2rem;
+    }
+
     .nosotrosSubcontainer.tres 
     {
         padding-top: 0;
@@ -1256,13 +1267,24 @@ section.testimony {
 
     .carousel 
     {
-        top: 45%;
+        top: 50%;
     }
 
     .slides
     {
         grid-template-rows: 150px;
         gap: 1rem;
+    }
+
+    .acercaTittle
+    {
+            font-size: 2rem;
+    }
+
+    .acercaText 
+    {
+        padding-top: 0.5rem;
+        font-size: 1rem;
     }
 
     .about__main{
