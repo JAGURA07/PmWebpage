@@ -64,7 +64,7 @@ body {
 
 .contactContainer
 {   
-    position: fixed;
+    position: relative;
     display: grid;
     grid-template-columns: 3fr 2fr;
     gap: 1em;
@@ -73,9 +73,10 @@ body {
         #fff,
         rgba(255,255,255,0.1)
         );
-    height: 45vw;
+    height: 85vh;
     justify-items: center;
-    align-items: center;
+    align-items: start;
+    padding-top: 4rem;
 }
 
 .contactSubcontainer
@@ -88,13 +89,23 @@ body {
     align-items: center;
 }
 
+.contact2Sub
+{
+    position: inherit;
+    width: 100%;
+    height: 25rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    top: 30%;
+}
+
+
 .form-content
 {
     align-items: center;
     justify-content: center;
-    padding: 0 50px;
+    padding: 0 3rem;
     width: 100%;
-    border-radius: 25px;
 }
 
 .form-content h2
@@ -112,7 +123,7 @@ body {
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 1rem;
-    border: 1px solid #fff;
+    border: transparent;
     font-size: 1rem;
 }
 
@@ -129,7 +140,7 @@ body {
 .lineaC3
 {
     position: absolute;
-    top: 4rem;
+    top: 7rem;
     background-color: #CF142B;
     height: 5px;
     width: 5rem;
@@ -139,7 +150,7 @@ body {
 .lineaC2
 {
     position: absolute;
-    top: 4rem;
+    top: 7rem;
     background-color: #CF142B;
     height: 5px;
     width: 5rem;
@@ -164,6 +175,20 @@ body {
     text-decoration: none;
 }
 
+.contactText
+{
+    position: relative;
+    padding: 0 3rem;
+    justify-self: start;
+}
+
+.contact2Text
+{
+    position: relative;
+    padding: 0;
+    justify-self: start;
+}
+
 .contactTittle
 {
     font-family: 'Inter';
@@ -175,8 +200,105 @@ body {
     text-decoration: none;
 }
 
+.contactSubittle
+{
+    font-family: 'Inter';
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #101084;
+    padding: 0;
+    justify-self: start;
+    text-decoration: none;
+}
 
+.contactNumber
+{
+    font-family: 'Inter';
+    font-size: 1rem;
+    font-weight: 600;
+    color: #CF142B;
+    padding-bottom: 2rem;
+    justify-self: start;
+    text-decoration: none;
+}
 
+.contactParagraph {
+    width: 75%;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #000;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.contact2Paragraph
+{
+    width: 100%;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #828282;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.social
+{
+    width: 30%;
+}
+
+.socialSVG
+{
+    position: relative;
+    content: '';
+    display: block;
+    height: 2rem;
+    width: 2rem;
+    background-image: url(../images/facebook.svg);
+    background-size: cover;
+}
+
+.instagramSVG
+{
+    position: relative;
+    content: '';
+    display: block;
+    height: 2rem;
+    width: 2rem;
+    background-image: url(../images/instagram.svg);
+    background-size: cover;
+}
+
+.linkedinSVG
+{
+    position: relative;
+    content: '';
+    display: block;
+    height: 2rem;
+    width: 2rem;
+    background-image: url(../images/linkedin.svg);
+    background-size: cover;
+}
+
+/* FOOTER */
+
+.contactFooter
+{   
+    position: relative;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 1em;
+    background: linear-gradient(
+        to top,
+        #0C2340,
+        #003087
+        );
+    height: fit-content;
+    justify-items: center;
+    align-items: start;
+    padding-top: 4rem;
+}
 
 
 

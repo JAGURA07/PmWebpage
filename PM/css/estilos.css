@@ -1007,6 +1007,8 @@ section.testimony {
 
     .nav__link {
         margin-left: 2rem;
+        margin-right: 3rem;
+        width: 100%;
     }
 
     /* .nav__menu{
