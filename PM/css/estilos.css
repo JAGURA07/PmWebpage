@@ -64,7 +64,7 @@ body {
 }
 
 .hero {
-    overflow: hidden;
+    overflow-x: hidden;
     box-sizing: border-box;
     width: 100vw;
     height: calc(10vh + 3rem);
@@ -289,21 +289,18 @@ a.nav__links:hover
     overflow: hidden;
 }
 
-.productosContainer{
+.productosContainer
+{
     display: grid;
     grid-template-columns: 1fr;
     gap: 1em;
-/*    background-image: url(../images/degradadoG.jpg);*/
-background: linear-gradient(
-        to top,
-        #0C2340,
-        #003087
-        );
+    /* background-image: url(../images/degradadoG.jpg); */
+    background: linear-gradient( to top, #0C2340, #003087 );
     background-repeat: no-repeat;
     background-size: cover;
-    height: 45vw;
+    height: 85vh;
     justify-items: center;
-    align-items: start;
+    align-items: center;
 }
 
 .productosSubcontainer{
@@ -392,23 +389,24 @@ background: linear-gradient(
 }
 
 
-.productosText{
+.productosText
+{
     font-family: 'Inter', sans-serif;
     color: #fff;
     text-align: center;
     text-decoration: none;
 }
 
-.productosTittle
+.productosTittle 
 {
     font-weight: 600;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .productosSubtittle
-{
+ {
     font-weight: 400;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .productosParagraph
@@ -996,91 +994,6 @@ section.testimony {
     color: #fff;
     font-size: 1rem;
     font-weight: 300;
-}
-
-.form-content
-{
-    align-items: center;
-    justify-content: center;
-    background-position: center;
-    background-size: cover;
-    padding: 0 50px;
-    width: 100%;
-    border-radius: 25px;
-}
-
-.form-content h2
-{
-    font-family: Inter;
-    color: #F4F6F9;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-/* Galeria */
-
-.gallery__tittle
-{
-    grid-column-start: 1;
-    grid-column-end: 4;
-}
-
-.gallery__paragraph
-{
-    font-family: Inter;
-    color: #F4F6F9;
-    font-size: 2.5rem;
-    margin-bottom: 20px;   
-}
-
-.gallery-container
-{
-    position: relative;
-    background-repeat: no-repeat;
-    background-position: center;
-    justify-content: center;
-    align-items: center;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    padding: 30px;
-    grid-gap:30px;
-    height: 80vh;
-}
-
-.gallery-sub
-{
-    gap:30px;
-    max-width: fit-content;
-    display: grid;
-    grid-template-columns: 1fr;
-    height: 80%;
-}
-
-.gallery-sub:nth-of-type(2)
-{
-    grid-template-rows: 1fr 1fr;
-}
-
-.gallery-sub:nth-of-type(3)
-{
-    grid-template-rows: 3fr 1fr;
-}
-
-.gallery-sub:nth-of-type(4)
-{
-    grid-template-rows: 1fr 3fr;
-}
-
-.gallery__img
-{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-.gallery__item:nth-child(4){
-    grid-column-start: span 2;
 }
 
 /* Media queries */

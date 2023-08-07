@@ -8,7 +8,7 @@
     <title>Contacto</title>
     <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/Esub.css">
+    <link rel="stylesheet" href="../css/mediaStyles.css">
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script type="text/javascript" src="../js/script.js"></script>
@@ -17,26 +17,45 @@
 <body>
     <div w3-include-html="nabvar.html" class = "hero"></div>
 
-    <h2>Contactanos</h2>
+    <section class="contact">
 
-    <form class="form-content" action="https://formsubmit.co/xo.628hod@gmail.com" method="POST">
+        <div class="contactContainer container">
 
-        <input class="textoA" type="text" name="name" id="name">Empresa *</input>
+            <span class="lineaC3"></span>
+            <span class="lineaC2"></span>
+            
+            <div class="contactSubcontainer">
 
-        <label for="email">Correo electronico</label>
-        <input type="email" name="email" id="email">
+                    <h1 class="contactTittle">Contacto</h1>
 
-        <label for="subject">Asunto</label>
-        <input type="text" name="subject" id="subject">
+                    <form class="form-content" action="https://formsubmit.co/xo.628hod@gmail.com" method="POST">
 
-        <label for="coments">Comentarios</label>
-        <textarea name="coments" id="coments" cols="30" rows="5"></textarea>
+                        <input class="formShape" type="text" name="name" id="name" placeholder="Nombre completo*">
 
-        <input class="btn" type="submit" value="Enviar">
+                        <input class="formShape" type="email" name="email" id="email" placeholder="Empresa*">
 
-    </form>
+                        <input class="formShape" type="text" name="subject" id="subject" placeholder="Teléfono*">
+                        
 
+                        <input class="formShape" type="text" name="subject" id="subject" placeholder="Correo Electrónico*">
 
+                        <textarea class="formShape"  name="coments" id="coments" cols="30" rows="5" placeholder="¿Qué podemos hacer por usted?"></textarea>
+
+                        <input class="btn" type="submit" value="Enviar">
+
+                    </form>
+
+            </div>
+
+            <div class="contactSubcontainer">
+                <h1 class="contactTittle">Hola</h1>
+            </div>
+
+            <span class="lineaF"></span>
+
+        </div>
+
+    </section>>
     <script src="./js/menu.js"></script>
     <script>includeHTML()</script>
 </body>

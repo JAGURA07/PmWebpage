@@ -16,5 +16,6 @@ desp = document.querySelectorAll('li.nav__items:has(ul.submenu)')
 desp.forEach(element => {
   element.addEventListener('click',()=>{
     element.classList.toggle('action')
+    console.log("Oa")
   })
 });

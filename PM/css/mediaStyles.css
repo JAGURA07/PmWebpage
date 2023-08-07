@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --padding-container: 100px 0;
+    --color-title: #001A49;
+}
+
+html::-webkit-scrollbar {
+    width: 15px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: rgb(204, 204, 204);
+    border-radius: 3px;
+}
+
+html::-webkit-scrollbar-track {
+    border-radius: 3px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden  ;
+}
+
+.tittle{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+.subtittle{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.paragraph{
+    font-weight: 400, sans-serif;
+    font-size: 1.5rem;
+    color: #000;
+    padding-top: 2rem;
+}   
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #dfdfdf;
+}
+
+/* FORMULARIO */
+
+::placeholder { color: #fff; }
+
+.contact
+{  
+    background-color: #e5e5f7;
+    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    overflow: hidden;
+}   
+
+.contactContainer
+{   
+    position: fixed;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 1em;
+    background: linear-gradient(
+        to right,
+        #fff,
+        rgba(255,255,255,0.1)
+        );
+    height: 45vw;
+    justify-items: center;
+    align-items: center;
+}
+
+.contactSubcontainer
+{
+    width: 100%;
+    height: 25rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.form-content
+{
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.form-content h2
+{
+    font-family: Inter;
+    color: #003087;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.formShape
+{
+    width: 80%;
+    background: #101084;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    border: 1px solid #fff;
+    font-size: 1rem;
+}
+
+.btn
+{
+    border-radius: 4px;
+    border: transparent;
+    height: 2rem;
+    width: 7rem;
+    color: #fff;
+    background-color: #CF142B;
+}
+
+.lineaC3
+{
+    position: absolute;
+    top: 4rem;
+    background-color: #CF142B;
+    height: 5px;
+    width: 5rem;
+    right: 0;
+}
+
+.lineaC2
+{
+    position: absolute;
+    top: 4rem;
+    background-color: #CF142B;
+    height: 5px;
+    width: 5rem;
+    left: 0;
+}
+
+.lineaF
+{
+    position: absolute;
+    bottom: 5rem;
+    background-color: #CF142B;
+    height: 5px;
+    width: 100%;
+    left: 0;
+}
+
+.productosText
+{
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.contactTittle
+{
+    font-family: 'Inter';
+    font-size: 3rem;
+    font-weight: 600;
+    color: #101084;
+    padding: 0 3rem;
+    justify-self: start;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* GALERIA */
+
+.gallery__tittle
+{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.gallery__paragraph
+{
+    font-family: Inter;
+    color: #F4F6F9;
+    font-size: 2.5rem;
+    margin-bottom: 20px;   
+}
+
+.gallery-container
+{
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 30px;
+    grid-gap:30px;
+    height: 80vh;
+}
+
+.gallery-sub
+{
+    gap:30px;
+    max-width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 80%;
+}
+
+.gallery-sub:nth-of-type(2)
+{
+    grid-template-rows: 1fr 1fr;
+}
+
+.gallery-sub:nth-of-type(3)
+{
+    grid-template-rows: 3fr 1fr;
+}
+
+.gallery-sub:nth-of-type(4)
+{
+    grid-template-rows: 1fr 3fr;
+}
+
+.gallery__img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.gallery__item:nth-child(4){
+    grid-column-start: span 2;
+}
