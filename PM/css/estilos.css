@@ -64,7 +64,6 @@ body {
 }
 
 .hero {
-    overflow-x: hidden;
     box-sizing: border-box;
     width: 100vw;
     height: calc(10vh + 3rem);
@@ -84,7 +83,6 @@ body {
     display: flex;
     align-items: center;
     color: #000;    
-    overflow: hidden;
 }
 
 .nav__logo
@@ -113,6 +111,16 @@ body {
     grid-auto-columns: max-content;
     gap: 2em;
     height: 100%;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #CF142B;
 }
 
 a.nav__links::before {
@@ -234,6 +242,12 @@ a.nav__links:hover
 {
     max-height: 1000px ;
     opacity: 1;
+}
+
+.listaNav
+{
+    color: #003087;
+    text-decoration: none;
 }
 
 
