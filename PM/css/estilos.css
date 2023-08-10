@@ -788,22 +788,6 @@ img.oficionas.centrales {
     background-repeat: no-repeat;
 }
 
-.mision
-{
-    height:50vh;
-    background-image: url("../images/barras.jpg");
-
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    width: 100vw;
-    overflow: hidden;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .lineaD
 {
     position: absolute;
@@ -1026,27 +1010,6 @@ section.testimony {
         width: 100%;
     }
 
-    /* .nav__menu{
-        display: block;
-    }
-
-    .nav__link--menu{
-        font-size: 1rem;
-        position: fixed;
-        background-color: rgb(255,255,255,0.6);
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 40%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        z-index: 100;
-        opacity: 0;
-        pointer-events: none;
-        transition: .7s opacity;
-    } */
 
     .btn-flotante
     {
@@ -1054,20 +1017,6 @@ section.testimony {
         top: 16%;
         font-size: 1rem;
     }
-/* 
-    .nav__link--show{
-        --show: block;
-        opacity:1 ;
-        pointer-events: unset;
-    }
-
-    .nav__close{
-        position: absolute;
-        top: 30px;
-        right: 30px;
-        width: 30px;
-        cursor: pointer;
-    } */
 
     .hero__title{
         font-size: 2rem;
@@ -1295,6 +1244,54 @@ section.testimony {
 
     .footer__input{
         flex: 1;
+    }
+
+}
+
+@media (min-width:300px) and (max-width:1000px)
+{
+
+    .nav__link--show{
+        --show: block;
+        opacity:1 ;
+        pointer-events: unset;
+    }
+
+    .nav__close{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        cursor: pointer;
+    }
+
+     .nav__menu{
+        display: block;
+    }
+
+    .nav__link--menu{
+        font-size: 1rem;
+        position: fixed;
+        background-color: rgb(255,255,255,0.6);
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 100;
+        opacity: 0;
+        pointer-events: none;
+        transition: .7s opacity;
+    } 
+
+    .btn-flotante
+    {
+        width: 10rem;
+        top: 36%;
+        font-size: 1rem;
     }
 
 }
