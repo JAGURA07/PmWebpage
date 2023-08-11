@@ -51,7 +51,7 @@ body {
 
 /* FORMULARIO */
 
-::placeholder { color: #fff; }
+::placeholder { color: #828282; }
 
 .contact
 {  
@@ -119,7 +119,7 @@ body {
 .formShape
 {
     width: 80%;
-    background: #101084;
+    background: #fff;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 1rem;
@@ -313,6 +313,10 @@ body {
     text-decoration: none;
 }
 
+button, input {
+    overflow: visible;
+    color: black;
+}
     
 /* GALERIA */
 
@@ -402,12 +406,15 @@ body {
     object-position: center;
 }
 
-.galeriaItem:nth-child(4){
+.galeriaItem:nth-child(4)
+{
     grid-column-start: span 2;
 }
 
-p.sliderParagraph {
+p.sliderParagraph
+{
     height: 4rem;
+    color: #828282;
     font-size: 0.9rem;
 }
 
@@ -693,10 +700,10 @@ p.sliderParagraph {
     padding-top: 0rem;
 }
 
-.recuperadorasSubcontainer{
+.recuperadoresSubcontainer{
     background: linear-gradient( to right, #fff, rgba(255,255,255,0.1) );
     width: 100%;
-    height: 18rem;
+    height: 60vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-start: 1;
@@ -831,6 +838,98 @@ p.sliderParagraph {
     font-size: 1rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+}
+
+.fotoProductos
+{
+    position: relative;
+    width: 41vw;
+}
+
+.fotoProductos img
+{
+    width: 100%;
+}
+
+.tanquesSubcontainer {
+    background: linear-gradient( to right, #fff, rgba(255,255,255,0.1) );
+    width: 100%;
+    height: 65vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-items: center;
+    align-items: center;
+}
+
+.lineasSubcontainer {
+    background: linear-gradient( to right, #fff, rgba(255,255,255,0.1) );
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-items: center;
+    align-items: center;
+}
+
+.tanquesText
+{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+    padding: 0 5rem;
+    justify-self: start;
+    text-decoration: none;
+    width: 85%;
+}
+
+.tanquesTittle
+{
+    font-size: 2rem;
+    color: #003087;
+    font-family: 'Inter';
+    padding-left: 3rem;
+}
+
+.tanquesSubtittle
+{
+    font-size: 1.5rem;
+    color: #003087;
+    font-family: 'Inter';
+    padding-left: 3rem;
+}
+
+.calderasList
+{   
+    font-size: 1rem;
+    color: #000;
+    font-family: 'Inter';
+}
+
+.tanquesParagraph
+{
+    color: #000;
+    font-weight: 300;
+    font-size: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.tanquesLi
+{
+    margin: 0;
+    box-sizing: border-box;
+    padding-left: 1.5rem;
+}
+
+.recuperadorasLi
+{
+    margin: 0;
+    color: #000;
+    box-sizing: border-box;
 }
 
 .lineaProductos
