@@ -4,19 +4,20 @@
 	 viewBox="0 0 294.3 305.9" style="enable-background:new 0 0 294.3 305.9;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#CE0E2D;}
-	.st1{fill:#FFFFFF;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:11.3386;stroke-miterlimit:10;}
+	.st2{fill:#FFFFFF;}
 </style>
 <g>
-	<path class="st0" d="M39.2,266.6h225V92c0,0-0.9-40.9-48.1-50.4H39.2V266.6z"/>
+	<path class="st0" d="M36.2,266.5h225V91.9c0,0-0.9-40.9-48.1-50.4H36.2V266.5z"/>
 </g>
 <g>
 	<g>
-		<path class="st1" d="M70.3,236.1V128.5H105v107.6H70.3z"/>
-		<path class="st1" d="M129.8,128.5H160l-0.2,15c4.4-7,16.4-17.4,34.4-17.4c22,0,39.7,14.7,39.7,46.4v63.6h-33.4v-59.6
-			c0-13.9-6-22.6-18.1-22.1c-11.1,0.4-17.1,5.2-19.5,11.4c-0.9,2.2-1.1,5.3-1.1,8.4v62.1h-31.1L129.8,128.5z"/>
+		<path class="st1" d="M213.2,232.7h-129c-7.8,0-14.2-6.4-14.2-14.2v-129c0-7.8,6.4-14.2,14.2-14.2h129c7.8,0,14.2,6.4,14.2,14.2
+			v129C227.4,226.3,221,232.7,213.2,232.7z"/>
 	</g>
 	<g>
-		<circle class="st1" cx="88.2" cy="90.8" r="18.7"/>
+		<circle class="st1" cx="150.2" cy="154" r="49.2"/>
 	</g>
+	<circle class="st2" cx="197.5" cy="102.2" r="7.8"/>
 </g>
 </svg>

@@ -269,7 +269,7 @@ body {
     display: block;
     height: 2rem;
     width: 2rem;
-    background-image: url(../images/instagram.svg);
+    background-image: url(../images/Insta.svg);
     background-size: cover;
 }
 
@@ -353,6 +353,7 @@ body {
     padding: 30px;
     grid-gap: 30px;
     height: 40vh;
+    position: relative;
 }
 
 .galeriaSubcontainer
@@ -367,7 +368,15 @@ body {
 .caja
 {
     width: 100%;
-    height: 100%;  
+    height: fit-content;  
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 2rem 0;
+}
+
+.caja p:nth-child(n), .caja img:nth-child(n) {
+    padding: 0 4rem;
 }
 
 .galeriaSubcontainer:nth-of-type(2)
@@ -395,6 +404,11 @@ body {
 
 .galeriaItem:nth-child(4){
     grid-column-start: span 2;
+}
+
+p.sliderParagraph {
+    height: 4rem;
+    font-size: 0.9rem;
 }
 
 .galeriaText {
@@ -442,38 +456,46 @@ body {
     grid-template-columns: 1fr;
     gap: 0;
     background: transparent;
-    height: 90vh;
+    height: fit-content;
     justify-items: center;
     align-items: center;
     padding-top: 0rem;
+    position: relative;
 }
 
 .carousel2
 {
-    background: linear-gradient( to top, #0C2340, #003087 );
     overflow: hidden;
     width: 100%;
-    height: 400px;
+    height: fit-content;
 }
   
 .slides2
 {
     display: grid;
-    grid-template-columns: repeat(60,300px);
-    grid-template-rows: 300px;
-    animation: slideAnimation 120s linear infinite;
-    gap: 3rem;
+    grid-template-columns: repeat(15, 33vw);
+    grid-template-rows: min-content;
+  /*   animation: slideAnimation 120s linear infinite; */
+    overflow-x: scroll;
+    gap: 0;
+    height: fit-content;
 }
   
+.slides2::-webkit-scrollbar
+{
+    display: none;
+}
+
 .slides2 img
 {
     object-fit: contain;
     object-position: center;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: 350px;
+    background: linear-gradient( to top, #0C2340, #003087 );
 }
   
-@keyframes slideAnimation 
+/* @keyframes slideAnimation 
 {
     0% 
     {
@@ -483,6 +505,42 @@ body {
     {
       transform: translateX(calc(-35*300px));
     }
+} */
+
+.lineahistoria {
+    position: absolute;
+    top: 6rem;
+    background-color: #CF142B;
+    height: 5px;
+    width: 5rem;
+    right: 0;
+}
+
+.lineahistoriaI {
+    position: absolute;
+    top: 6rem;
+    background-color: #CF142B;
+    height: 5px;
+    width: 5rem;
+    left: 0;
+}
+
+.historiaTittle {
+    font-weight: 600;
+    color: #001A49;
+    font-size: 3rem;
+    width: 100%;
+    padding-top: 3rem;
+    padding-left: 5rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.cajaTittle
+{
+    color: #003087;
+    font-size: 2rem;
+    padding: 0 4rem;
 }
 
 /* MISION */
