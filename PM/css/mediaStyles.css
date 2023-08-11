@@ -316,6 +316,11 @@ body {
     
 /* GALERIA */
 
+.empresa
+{
+    background-color: #e5e5f7;
+}
+
 .galeriaTittle
 {
     padding: 0 3rem;
@@ -338,15 +343,16 @@ body {
 }
 
 .galeriaContainer
-{   width: 100vw;
+{   
+    width: 100vw;
     justify-content: center;
     align-items: center;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: min-content max-content max-content;
     padding: 30px;
-    grid-gap:30px;
-    height: max-content;
+    grid-gap: 30px;
+    height: 40vh;
 }
 
 .galeriaSubcontainer
@@ -433,7 +439,7 @@ body {
 {
     display: grid;
     grid-template-rows: min-content min-content min-content min-content;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 0;
     background: transparent;
     height: 90vh;
@@ -445,8 +451,6 @@ body {
 .carousel2
 {
     background: linear-gradient( to top, #0C2340, #003087 );
-    position: absolute;
-    top: 40%;
     overflow: hidden;
     width: 100%;
     height: 400px;
