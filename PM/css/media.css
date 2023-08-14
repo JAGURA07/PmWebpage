@@ -227,7 +227,6 @@ background: linear-gradient(
 .price__cta{
     display: block;
     padding: 20px 0;
-    border-radius: 10px;
     text-decoration: none;
     background-color: var(--bg-cta);
     font-weight: 600;
