@@ -87,7 +87,7 @@ body {
 .nav__logo
 {
     position: relative;
-    width: 12vw;
+    width: 15vw;
 }
 
 .nav__logo img
@@ -127,8 +127,8 @@ a.nav__links::before {
     transition: all 1s ease-in-out;
     content: '';
     display: block;
-    height: 2rem;
-    width: 2rem;
+    height: 1.5rem;
+    width: 1.5rem;
     background-image: url(../images/menuArrow.svg);
     background-size: cover;
 }
@@ -185,6 +185,13 @@ a.nav__links:hover
     align-items: center;
     justify-content: left;
     background-image: url(../images/degradado1.jpg);
+}
+
+.navParagraph {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 4px 0px 0px #000;
 }
 
 .btn-flotante 
@@ -1244,7 +1251,7 @@ section.testimony {
 
 }
 
-@media (min-width:300px) and (max-width:1000px)
+@media (min-width:300px) and (max-width:1024px)
 {
 
     .nav__link--show{
