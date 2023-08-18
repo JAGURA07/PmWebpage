@@ -276,8 +276,8 @@ a.nav__links:hover
     text-shadow: 4px 0px 0px  #000;
 }
 
-.hero__paragraph {
-    margin-bottom: 20px;
+.hero__paragraph 
+{
     font-size: 1.85rem;
     color: #fff;
     text-shadow: 4px 0px 0px  #000;
@@ -285,6 +285,7 @@ a.nav__links:hover
 
 .cta {
     font-size: 1.5rem;
+    bottom: -10%;
     text-transform: uppercase;
     font-weight: 600;
     display: inline-block;
@@ -292,6 +293,7 @@ a.nav__links:hover
     justify-self: center;
     color: #fff;
     text-decoration: none;
+    position: relative;
     padding: 13px 30px;
     border: 3px solid #fff;
 }
@@ -336,14 +338,15 @@ a.nav__links:hover
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
+    padding: 0 18rem;
 }
 
 .productosElement{
     position: relative;
     background-color: #e5e5f7;
     text-align: center;
-    width: 320px;
-    height: 320px;
+    width: 275px;
+    height: 275px;
     padding: 0;
     transition: all 1s ease-in;
     clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0 100%, 0 0);
@@ -488,6 +491,7 @@ a.nav__links:hover
     background-color: transparent;
     text-align: center;
     height: 250px;
+    width: 100%;
 }
 
 img.oficionas.centrales {
@@ -598,7 +602,7 @@ img.oficionas.centrales {
 .nuestroTexto
 {
     height: 5rem;
-    font-size: 2.5rem;
+    font-size: 3rem;
     background-color: transparent;
     z-index: 2;
     color: #fff;
@@ -704,7 +708,7 @@ img.oficionas.centrales {
     font-size: 3rem;
     font-weight: 600;
     color: #101084;
-    padding: 0 5rem;
+    padding: 0 3rem;
     justify-self: start;
     text-decoration: none;   
 }
@@ -713,7 +717,7 @@ img.oficionas.centrales {
 {
     font-weight: 400;
     color: #000;
-    padding-top: 2rem;
+    padding: 2rem 3rem;
     font-size: 1.25rem;
 }
 
@@ -722,7 +726,7 @@ img.oficionas.centrales {
     font-weight: 600;
     color: #101084; 
     font-size: 1.7rem;
-    padding-left: 3rem;
+    padding-left: 2rem;
     padding-bottom: 1rem;
 }
 
@@ -1251,7 +1255,7 @@ section.testimony {
 
 }
 
-@media (min-width:300px) and (max-width:1024px)
+@media (min-width:375px) and (max-width:1024px)
 {
 
     .nav__link--show{
@@ -1268,7 +1272,7 @@ section.testimony {
         cursor: pointer;
     }
 
-     .nav__menu{
+     .nav__menu{     
         display: block;
     }
 
