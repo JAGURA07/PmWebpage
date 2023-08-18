@@ -46,7 +46,7 @@ body {
 .container {
     width: 100%;
     margin: 0 auto;
-    background-color: #dfdfdf;
+    background-color: #fff;
 }
 
 /* FORMULARIO */
@@ -118,6 +118,15 @@ body {
 
 .formShape
 {
+    width: 80%;
+    background: #101084;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: transparent;
+    font-size: 1rem;
+}
+
+.formShapeFooter {
     width: 80%;
     background: #fff;
     padding: 10px;
@@ -450,7 +459,7 @@ p.sliderParagraph
 
 .slider
 {
-    background-color: #dfdfdf;
+    background-color: #fff;
     overflow: hidden;
 }
 
@@ -948,9 +957,6 @@ p.sliderParagraph
     width: 5rem;
     left: 0;
 }
-
-
-
 
 @media (min-width:1024px) and (max-width:1416px)
 {
