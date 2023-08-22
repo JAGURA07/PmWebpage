@@ -69,4 +69,8 @@
     
     }
 
+    const autoInterval = setInterval(() => {
+        right();
+    }, 7000); 
+
 })();

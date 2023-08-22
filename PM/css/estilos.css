@@ -112,8 +112,8 @@ body {
     height: 100%;
 }
 
-a {
-    background-color: transparent;
+a 
+{
     text-decoration: none;
 }
 
@@ -184,7 +184,7 @@ a.nav__links:hover
     padding: 0 3rem;
     align-items: center;
     justify-content: left;
-    background-image: url(../images/degradado1.jpg);
+    background: linear-gradient( to top, #0C2340, #003087 );
 }
 
 .navParagraph {
@@ -235,7 +235,7 @@ a.nav__links:hover
     position: absolute;
     left: 0%;
     top: 100%;
-    padding: 20px;
+    padding: 0px;
     background-color: rgba(255,255,255,0.6);
     max-height: 0px;
     transition: all 1s ease-in-out;
@@ -247,14 +247,78 @@ a.nav__links:hover
 {
     max-height: 1000px ;
     opacity: 1;
+    width: 16rem;
+}
+
+.submenu2
+{
+    opacity: 0;
+    font-family: 'Inter';
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    padding: 0px;
+    background-color: rgba(255,255,255,0.6);
+    max-height: 0px;
+    transition: all 1s ease-in-out;
+    overflow: hidden;
+    box-sizing: border-box; 
+}
+
+.action .submenu2
+{
+    max-height: 1000px ;
+    opacity: 1;
+    width: 21rem;
 }
 
 .listaNav
 {
     color: #003087;
-    text-decoration: none;
 }
 
+.listaNav a:visited {
+    color: #003087;
+}
+
+.listaNav a:visited:hover {
+    color: #CF142B;
+}
+
+.submenu li {
+    padding: 1rem;
+    position: relative;
+}
+
+.submenu li::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #003087; /* Cambia el color según tus preferencias */
+}
+
+.submenu2 li {
+    padding: 1rem;
+    position: relative;
+}
+
+.submenu2 li::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #003087; /* Cambia el color según tus preferencias */
+}
 
 /* Hero container */
 
@@ -304,10 +368,7 @@ a.nav__links:hover
 /* Productos */
 
 .productos{
-    background-color: #e5e5f7;
-    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
-    background-size: 20px 20px;
-    background-position: 0 0, 10px 10px;
+    height: fit-content;
     overflow: hidden;
 }
 
@@ -333,20 +394,20 @@ a.nav__links:hover
         rgba(255,255,255,0.1)
         );
     width: 100%;
-    height: 25rem;
+    height: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
-    align-items: center;
-    padding: 0 18rem;
+    align-items: center;    
+    padding: 0px 15%;   
 }
 
 .productosElement{
     position: relative;
     background-color: #e5e5f7;
     text-align: center;
-    width: 275px;
-    height: 275px;
+    width: 90%;
+    height: 70%;
     padding: 0;
     transition: all 1s ease-in;
     clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0 100%, 0 0);
@@ -463,7 +524,7 @@ a.nav__links:hover
     grid-template-columns: 1fr;
     gap: 1em;
     grid-template-rows: min-content min-content min-content;
-    height: 100vh;
+    height: 95vh;
     justify-items: center;
     align-items: start;
     padding-top: 2rem;
@@ -490,7 +551,7 @@ a.nav__links:hover
     position: relative;
     background-color: transparent;
     text-align: center;
-    height: 250px;
+    height: 25vh;
     width: 100%;
 }
 
@@ -543,7 +604,7 @@ img.oficionas.centrales {
 
 .Lparagraph{
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #000;
     text-align: justify;
     padding-top: 2rem;
@@ -558,13 +619,17 @@ img.oficionas.centrales {
     padding-top: 2rem;
 }
 
-.nosotrosTittle{
-    font-size: 3rem;
-    font-weight: 600;
-    color: #101084;
+.nosotrosText{
     padding: 0 5rem;
     justify-self: start;
     text-decoration: none;
+}
+
+.nosotrosTittle
+{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #101084;
 }
 
 .nosotrosSubtittle
@@ -578,29 +643,17 @@ img.oficionas.centrales {
 
 .nosotrosParagraph{
     font-weight: 400;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     color: #000;
     padding-top: 2rem;
+    width: 73%; 
 }
 
 /* NUESTROS CLIENTES*/
 
-.nuestro
-{
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    width: 100vw;
-    height: 40vh;
-    overflow: hidden;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .nuestroTexto
 {
+    font-weight: 600;
     height: 5rem;
     font-size: 3rem;
     background-color: transparent;
@@ -624,16 +677,16 @@ img.oficionas.centrales {
     top: 40%;
     overflow: hidden;
     width: 100%;
-    height: 400px;
+    height: 40vh;
 }
   
-.slides 
+.slides
 {
     display: grid;
-    grid-template-columns: repeat(60,300px);
-    grid-template-rows: 300px;
+    grid-template-columns: repeat(36,10vw);
+    grid-template-rows: 30vh;
     animation: slideAnimation 60s linear infinite;
-    gap: 3rem;
+    gap: 4vw;
 }
   
 .slides img
@@ -652,7 +705,7 @@ img.oficionas.centrales {
     }
     100% 
     {
-      transform: translateX(calc(-35*300px));
+      transform: translateX(calc(-36*300px));
     }
 }
 
@@ -718,7 +771,20 @@ img.oficionas.centrales {
     font-weight: 400;
     color: #000;
     padding: 2rem 3rem;
-    font-size: 1.25rem;
+    font-size: 1rem;
+}
+
+.listaCertificado 
+{
+    padding: 0px 5rem;
+    justify-self: start;
+    text-decoration: none;
+}
+
+.acercaLista{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000;
 }
 
 .acercaCertificado
@@ -781,7 +847,7 @@ img.oficionas.centrales {
 
 .nuestro
 {
-    height:50vh;
+    height:40vh;
     background-image: url("../images/barras.jpg");
 
     position: relative;
@@ -890,16 +956,16 @@ section.testimony {
 
 .testimony__arrow{
     position: absolute;
-    top: 72%;
-    left: 4rem;
-    width: 6rem;
+    top: 70%;
+    left: 1%;
+    width: 5%;
     z-index: 4;
 }
 
 .testimony__arrow:nth-of-type(2)
 {
     left: auto;
-    right: 4rem;
+    right: 1%;
 }
 
 .right .testimony__body.next {
