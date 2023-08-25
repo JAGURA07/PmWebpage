@@ -88,6 +88,7 @@ body {
 {
     position: relative;
     width: 15vw;
+    padding-bottom: 1rem;
 }
 
 .nav__logo img
@@ -99,7 +100,9 @@ body {
     font-weight: 300;
 }
 
-.nav__link{
+.nav__link
+{
+    position: relative;
     margin-left: 6rem;
     margin-right: 16rem;
     width: 70%;
@@ -196,7 +199,7 @@ a.nav__links:hover
 
 .btn-flotante 
 {
-    top: 7.5%;
+    top: 53%;
     right: 0%;
     width: 15rem;
     height: 2rem;
@@ -211,7 +214,7 @@ a.nav__links:hover
     letter-spacing: 5px;
     background-color: #CF142B;
     padding: 18px 30px;
-    position: fixed;
+    position: absolute;
     transition: all 1000ms ease 0ms;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     z-index: 99;

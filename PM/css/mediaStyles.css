@@ -252,7 +252,7 @@ body {
 
 .social
 {
-    width: 30%;
+    width: 50%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -263,8 +263,8 @@ body {
     position: relative;
     content: '';
     display: block;
-    height: 2rem;
-    width: 2rem;
+    height: 3rem;
+    width: 3rem;
     background-image: url(../images/facebook.svg);
     background-size: cover;
 }
@@ -274,8 +274,8 @@ body {
     position: relative;
     content: '';
     display: block;
-    height: 2rem;
-    width: 2rem;
+    height: 3rem;
+    width: 3rem;
     background-image: url(../images/Insta.svg);
     background-size: cover;
 }
@@ -285,8 +285,8 @@ body {
     position: relative;
     content: '';
     display: block;
-    height: 2rem;
-    width: 2rem;
+    height: 3rem;
+    width: 3rem;
     background-image: url(../images/linkedin.svg);
     background-size: cover;
 }
