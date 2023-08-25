@@ -689,7 +689,7 @@ img.oficionas.centrales {
     grid-template-columns: repeat(36,10vw);
     grid-template-rows: 30vh;
     animation: slideAnimation 60s linear infinite;
-    gap: 4vw;
+    gap: 4.28vw;
 }
   
 .slides img
@@ -708,7 +708,7 @@ img.oficionas.centrales {
     }
     100% 
     {
-      transform: translateX(calc(-36*300px));
+      transform: translateX(calc(-28*14.28vw));
     }
 }
 
@@ -730,7 +730,7 @@ img.oficionas.centrales {
     height: fit-content;
     justify-items: center;
     align-items: start;
-    padding-top: 4rem;
+    padding: 2rem 5rem;
 }
 
 
@@ -764,7 +764,6 @@ img.oficionas.centrales {
     font-size: 3rem;
     font-weight: 600;
     color: #101084;
-    padding: 0 3rem;
     justify-self: start;
     text-decoration: none;   
 }
@@ -773,7 +772,7 @@ img.oficionas.centrales {
 {
     font-weight: 400;
     color: #000;
-    padding: 2rem 3rem;
+    padding: 2rem 0;
     font-size: 1rem;
 }
 
@@ -887,7 +886,7 @@ img.oficionas.centrales {
 .lineaDa
 {
     position: absolute;
-    top: 8rem;
+    top: 6rem;
     background-color: #CF142B;
     height: 5px;
     width: 5rem;
@@ -897,7 +896,7 @@ img.oficionas.centrales {
 .lineaIa
 {
     position: absolute;
-    top: 8rem;
+    top: 6rem;
     background-color: #CF142B;
     height: 5px;
     width: 5rem;
