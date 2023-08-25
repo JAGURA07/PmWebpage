@@ -835,7 +835,7 @@ img.oficionas.centrales {
     background-image: url("../images/tubos.jpg");
 
     position: relative;
-    display: inline-block;
+    display: block;
     text-align: center;
     width: 100vw;
     overflow: hidden;
@@ -1151,7 +1151,7 @@ section.testimony {
 
     .nosotrosContainer 
     {
-        height: 70vh;
+        height: 80vh;
         padding-top: 2rem;
     }
 
